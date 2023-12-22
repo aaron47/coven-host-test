@@ -3,7 +3,7 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 </script>
 
 <template>
-	<div class="card md:w-80 shadow-xl image-full sm:w-48">
+	<div class="card md:w-80 shadow-xl image-full sm:w-44">
 		<figure>
 			<img :src="bestSeller.image" :alt="bestSeller.name" />
 		</figure>

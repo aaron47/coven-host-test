@@ -27,7 +27,7 @@ onMounted(() => {
 		<nav
 			class="bg-black/80 h-20 flex items-center justify-evenly sm:p-8 md:p-0">
 			<NuxtLink to="/">
-				<div class="flex items-center space-x-5">
+				<div class="flex items-center space-x-5 sm:h-20 sm:w-16">
 					<img
 						class="md:h-14 md:w-full sm:w-12"
 						:src="logoToDisplay"

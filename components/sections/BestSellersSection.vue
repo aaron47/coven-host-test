@@ -25,7 +25,7 @@ const bestSellers: BestSeller[] = [
 <template>
 	<section
 		id="coven-best-sellers-section"
-		class="flex flex-col items-center justify-center min-h-screen space-y-8 w-screen p-12">
+		class="flex flex-col items-center justify-center min-h-screen space-y-8 w-screen">
 		<h1 class="text-4xl text-white font-semibold">Our Best Sellers</h1>
 
 		<div class="flex sm:justify-center sm:items-center sm:flex-col lg:flex-row md:flex-col md:space-x-0 sm:space-x-0 md:space-y-4 sm:space-y-12 lg:space-y-0 lg:space-x-12">
