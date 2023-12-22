@@ -3,7 +3,7 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 </script>
 
 <template>
-	<div class="card md:w-80 shadow-xl image-full sm:w-44">
+	<div id="best-seller-card" class="card md:w-80 shadow-xl image-full sm:w-44">
 		<figure>
 			<img :src="bestSeller.image" :alt="bestSeller.name" />
 		</figure>
@@ -18,5 +18,19 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 .card.image-full::before {
 	background-color: #27004f;
 	opacity: 0.5;
+}
+
+@supports (-webkit-touch-callout: none) {
+	@media (min-width: 767px) {
+		#best-seller-card {
+			width: 20rem; /* 320px */
+		}
+	}
+
+	@media (min-width: 375px) {
+		#best-seller-card {
+			width: 11rem;
+		}
+	}
 }
 </style>
