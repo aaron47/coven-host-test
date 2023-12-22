@@ -20,17 +20,19 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 	opacity: 0.5;
 }
 
-@supports (-webkit-touch-callout: none) {
-	@media (min-width: 767px) {
-		#best-seller-card {
-			width: 20rem; /* 320px */
-		}
-	}
+#best-seller-card {
+	width: 320px; /* Fallback width */
+}
 
-	@media (min-width: 375px) {
-		#best-seller-card {
-			width: 11rem;
-		}
+@media (min-width: 767px) {
+	#best-seller-card {
+		width: 20rem; /* 320px */
+	}
+}
+
+@media (min-width: 375px) {
+	#best-seller-card {
+		width: 11rem;
 	}
 }
 </style>
