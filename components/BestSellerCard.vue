@@ -21,18 +21,18 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 }
 
 .card {
-	-webkit-width: 11rem;
-	width: 11rem;
-	-webkit-height: 100%;
-	height: 100%;
+	-webkit-width: 11rem !important; 
+	width: 11rem !important;
+	-webkit-height: 100% !important;
+	height: 100% !important;
 }
 
 @media (min-width: 767px) {
 	.card {
-		-webkit-width: 20rem;
-		width: 20rem;
-		-webkit-height: 100%;
-		height: 100%;
+		-webkit-width: 20rem !important;
+		width: 20rem !important;
+		-webkit-height: 100% !important;
+		height: 100% !important;
 	}
 }
 </style>
