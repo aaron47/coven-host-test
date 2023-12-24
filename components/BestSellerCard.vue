@@ -6,11 +6,13 @@ const props = defineProps<{ bestSeller: BestSeller }>();
   <div class="custom-card">
     <figure class="card-figure">
       <img :src="bestSeller.image" :alt="bestSeller.name" />
+      <div class="card-overlay">
+        <div class="card-body">
+          <span class="card-title">{{ bestSeller.name }}</span>
+          <span class="card-price">{{ bestSeller.price }} Tokens</span>
+        </div>
+      </div>
     </figure>
-    <div class="card-body">
-      <span class="card-title">{{ bestSeller.name }}</span>
-      <span class="card-price">{{ bestSeller.price }} Tokens</span>
-    </div>
   </div>
 </template>
 
@@ -18,13 +20,12 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 .custom-card {
   width: 11rem;
   height: auto;
-  background-color: white;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .card-figure {
+  position: relative;
   width: 100%;
   height: auto;
 }
@@ -33,14 +34,25 @@ const props = defineProps<{ bestSeller: BestSeller }>();
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 0.5rem;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #27004f;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  color: white; /* Set text color to white for visibility */
+  text-align: center;
 }
 
 .card-title {
@@ -59,4 +71,3 @@ const props = defineProps<{ bestSeller: BestSeller }>();
   }
 }
 </style>
-
