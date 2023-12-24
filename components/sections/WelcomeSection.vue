@@ -27,5 +27,6 @@
 		),
 		url('~/assets/bg_cropped.webp') no-repeat center center fixed;
 	background-size: cover;
+	background-position: center;
 }
 </style>
