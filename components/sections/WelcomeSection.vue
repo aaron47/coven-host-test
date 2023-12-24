@@ -3,7 +3,8 @@
 		id="coven-welcome-section"
 		class="flex flex-col items-center justify-center min-h-screen w-screen sm:p-6">
 		<div class="text-center">
-			<h1 class="md:text-4xl font-bold text-white uppercase tracking-wide sm:text-lg sm:font-bold md:font-normal">
+			<h1
+				class="md:text-4xl font-bold text-white uppercase tracking-wide sm:text-lg sm:font-bold md:font-normal">
 				Elevate your Collection with Unbeatable Discounts.
 			</h1>
 			<h3 class="mt-4 md:text-2xl sm:text-sm text-white">
@@ -25,8 +26,17 @@
 			rgba(0, 0, 0, 0.7),
 			rgba(76, 0, 153, 0.4)
 		),
-		url('~/assets/bg_cropped.webp') no-repeat center center fixed;
+		url('~/assets/bg_cropped.webp') no-repeat center center;
 	background-size: cover;
-	background-position: center;
+	background-attachment: scroll; /* Change from 'fixed' to 'scroll' */
+	min-height: 100vh; /* Adjust based on your layout needs */
+}
+
+/* Optional: Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+	#coven-welcome-section {
+		background-size: 100% auto; /* Adjust size to better fit mobile screens */
+		min-height: 50vh; /* Adjust minimum height for mobile screens */
+	}
 }
 </style>
