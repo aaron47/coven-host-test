@@ -35,8 +35,8 @@
 /* Optional: Responsive adjustments for smaller screens */
 @media (max-width: 767px) {
 	#coven-welcome-section {
-		background-size: 100% auto; /* Adjust size to better fit mobile screens */
-		min-height: 50vh; /* Adjust minimum height for mobile screens */
+		background-size: 100% 100%; /* Adjust size to better fit mobile screens */
+		min-height: 100vh; /* Adjust minimum height for mobile screens */
 	}
 }
 </style>
