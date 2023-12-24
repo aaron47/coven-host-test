@@ -23,12 +23,16 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 .card {
 	-webkit-width: 11rem !important; 
 	width: 11rem !important;
+	-webkit-height: 11rem !important;
+	height: 11rem !important;
 }
 
 @media (min-width: 767px) {
 	.card {
 		-webkit-width: 20rem !important;
 		width: 20rem !important;
+		-webkit-height: 20rem !important;
+		height: 20rem !important;
 	}
 }
 </style>
