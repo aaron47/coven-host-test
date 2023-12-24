@@ -3,7 +3,7 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 </script>
 
 <template>
-	<div class="best-seller-card card md:w-80 shadow-xl image-full sm:w-44">
+	<div class="card md:w-80 shadow-xl image-full sm:w-44">
 		<figure>
 			<img :src="bestSeller.image" :alt="bestSeller.name" />
 		</figure>
@@ -15,18 +15,18 @@ const props = defineProps<{ bestSeller: BestSeller }>();
 </template>
 
 <style scoped>
-.best-seller-card.card.image-full::before {
+.card.image-full::before {
 	background-color: #27004f;
 	opacity: 0.5;
 }
 
-.best-seller-card {
+.card {
 	width: 11rem;
 	height: 100%;
 }
 
 @media (min-width: 767px) {
-	.best-seller-card {
+	.card {
 		width: 20rem;
 		height: 100%;
 	}
